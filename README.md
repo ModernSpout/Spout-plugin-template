@@ -8,9 +8,11 @@
 
 ## Introduction
 
-This is a template for [Spout](https://github.com/ModernSpout/Spout-Paper-server) plugins.
+This is a template for a [Spout](https://github.com/ModernSpout/Spout-Paper-server) plugin.
 
 It compiles, but it adds no content yet.
+If you want a template that contains some example blocks and items,
+see [here](https://github.com/ModernSpout/Spout-plugin-example).
 
 To make this template into your own plugin, you should:
 * Make a new project by clicking **Use this template** on the top-right
