@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "example_stuff:block/example_green_screen_block"
+    }
+  }
+}

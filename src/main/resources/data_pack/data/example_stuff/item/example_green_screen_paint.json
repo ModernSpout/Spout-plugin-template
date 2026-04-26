@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:item",
+  "mappings": [
+    {
+      "to": "minecraft:slime_ball"
+    }
+  ]
+}

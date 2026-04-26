@@ -1,0 +1,19 @@
+# Put your own plugin name below
+name: YourPluginNameHere
+description: $description
+version: '$version'
+
+# Replace with your own classes
+main: com.example.spoutexampleplugin.ExamplePlugin
+bootstrapper: com.example.spoutexampleplugin.ExamplePluginBootstrap
+# Choose the right API version here
+api-version: '1.21.11'
+load: POSTWORLD
+# Add any namespaces of blocks and items you add below, with a human-readable name
+namespaces:
+  example_stuff: Example stuff
+
+# Add yourself below
+authors: []
+# Replace with your own website
+website: https://github.com/ModernSpout/Spout-plugin-template

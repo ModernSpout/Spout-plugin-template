@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "example_stuff:example_green_screen_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "example_stuff:blocks/example_green_screen_block"
+}

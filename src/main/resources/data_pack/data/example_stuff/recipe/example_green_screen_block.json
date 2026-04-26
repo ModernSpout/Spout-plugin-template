@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "example_stuff:example_green_screen_paint",
+    "#minecraft:wool"
+  ],
+  "result": {
+    "count": 1,
+    "id": "example_stuff:example_green_screen_block"
+  }
+}

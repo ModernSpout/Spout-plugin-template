@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_paint": {
+      "conditions": {
+        "items": [
+          {
+            "items": "example_stuff:example_green_screen_paint"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_wool": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:wool"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "example_stuff:example_green_screen_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_paint",
+      "has_wool"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "example_stuff:example_green_screen_block"
+    ]
+  }
+}

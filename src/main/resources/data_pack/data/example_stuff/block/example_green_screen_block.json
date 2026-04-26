@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:block",
+  "properties": {
+    "map_color": "minecraft:emerald",
+    "sound_type": "minecraft:wool",
+    "explosion_resistance": 0.5,
+    "destroy_time": 0.5,
+    "instrument": "minecraft:guitar"
+  },
+  "mappings": [
+    {
+      "type": "full_block",
+      "fallback": "minecraft:lime_concrete"
+    }
+  ]
+}

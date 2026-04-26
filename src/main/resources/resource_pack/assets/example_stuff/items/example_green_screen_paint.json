@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "example_stuff:item/example_green_screen_paint"
+  }
+}
