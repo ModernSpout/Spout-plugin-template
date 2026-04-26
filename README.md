@@ -8,19 +8,26 @@
 
 ## Introduction
 
-This is a template for Spout plugins.
+This is a template for [Spout](https://github.com/ModernSpout/Spout-Paper-server) plugins.
 
-It includes these example features:
-* There is an item `example_stuff:example_green_screen_paint` that is crafted from 1 green dye
-* There is a block `example_stuff:example_green_screen_block` that is crafted from any wool and the green screen paint
-* When a player looks at a green screen block, they receive a chat message telling them so.
+It compiles, but it adds no content yet.
 
-If you want to begin with an empty slate,
-just delete `ExamplePluginListener`, `data_pack/data` and `resource_pack/assets`
+To make this template into your own plugin, you should:
+* Make a new project by clicking **Use this template** on the top-right
+* Replace the plugin name in `settings.gradle.kts`
+* Replace the group and description in `gradle.properties`
+* Replace the plugin name and website in `src/main/resource/paper-plugin.yml`
+* Rename the `com.example.spoutexampleplugin` package
+* Rename the `ExamplePlugin` and `ExamplePluginBootstrap` classes\
+  (and update `paper-plugin.yml`)
+* Replace the plugin name in `src/main/resource/data_pack/pack.mcmeta`
+* Add your own content in `src/main/resources/data_pack` and `src/main/resources/resource_pack`\
+  (and update the namespaces in `paper-plugin.yml`)\
+  (you can read how to add your own blocks and items [on the wiki](https://github.com/ModernSpout/Spout-Paper-server/wiki))
+* Replace the text in this `README.md`\
+  (you may keep the download/installation instructions below, or modify them as you like)
 
-There are no releases; the description below is an example.
-
-### How to test
+#### How to test
 
 * `./gradlew jar` to build the plugin JAR
 * `./gradlew downloadServer` to download the Spout server JAR (needed for below)

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "example_stuff:block/example_green_screen_block"
-  }
-}

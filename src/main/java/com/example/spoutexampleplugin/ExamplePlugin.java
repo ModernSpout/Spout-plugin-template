@@ -1,6 +1,5 @@
 package com.example.spoutexampleplugin;
 
-import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class ExamplePlugin extends JavaPlugin {
@@ -10,7 +9,7 @@ public final class ExamplePlugin extends JavaPlugin {
         // Don't do anything else if the server doesn't support Spout
         if (!CheckSpout.checkSpout(getComponentLogger())) return;
 
-        Bukkit.getPluginManager().registerEvents(new ExamplePluginListener(), this);
+        // TODO register events using Bukkit.getPluginManager().registerEvents(..) here?
         getLogger().info(getName() + " has been enabled!");
     }
 
