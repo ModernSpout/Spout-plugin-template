@@ -18,11 +18,13 @@ It includes these example features:
 If you want to begin with an empty slate,
 just delete `ExamplePluginListener`, `data_pack/data` and `resource_pack/assets`
 
-It has no downloads; the description below is an example.
+There are no releases; the description below is an example.
 
-## How to test
+### How to test
 
-
+* `./gradlew jar` to build the plugin JAR
+* `./gradlew downloadServer` to download the Spout server JAR (needed for below)
+* `./gradlew runServer` to spin up a Spout server with the plugin
 
 ## Download
 
