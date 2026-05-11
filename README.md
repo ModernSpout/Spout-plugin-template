@@ -8,7 +8,7 @@
 
 ## Introduction
 
-This is a template for a [Spout](https://github.com/ModernSpout/Spout-Paper-server) plugin.
+This is a template for a [Spout](https://github.com/ModernSpout/Spout) plugin.
 
 It compiles, but it adds no content yet.
 If you want a template that contains some example blocks and items,
@@ -25,7 +25,7 @@ To make this template into your own plugin, you should:
 * Replace the plugin name in `src/main/resource/data_pack/pack.mcmeta`
 * Add your own content in `src/main/resources/data_pack` and `src/main/resources/resource_pack`\
   (and update the namespaces in `paper-plugin.yml`)\
-  (you can read how to add your own blocks and items [on the wiki](https://github.com/ModernSpout/Spout-Paper-server/wiki))
+  (you can read how to add your own blocks and items [on the wiki](https://github.com/ModernSpout/Spout/wiki/*-Making-a-Spout-plugin))
 * Replace the text in this `README.md`\
   (you may keep the download/installation instructions below, or modify them as you like)
 
@@ -44,4 +44,4 @@ or a development version from **Actions** on the top (click a version, and scrol
 
 Place the `.jar` file into the `plugins` folder.
 
-Requires [Spout](https://github.com/ModernSpout/Spout-Paper-server).
+Requires [Spout](https://github.com/ModernSpout/Spout).

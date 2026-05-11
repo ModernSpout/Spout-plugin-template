@@ -5,8 +5,6 @@ import io.papermc.paper.plugin.bootstrap.PluginBootstrap;
 import io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents;
 import spout.server.paper.api.SpoutEvents;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.Objects;
 
 @SuppressWarnings({"unused", "UnstableApiUsage"})
@@ -15,7 +13,7 @@ class ExamplePluginBootstrap implements PluginBootstrap {
     @Override
     public void bootstrap(BootstrapContext context) {
         // Don't do anything else if the server doesn't support Spout
-        if (!CheckSpout.checkSpout(context.getLogger())) return;
+        if (!CheckSpout.checkSpout()) return;
 
         registerIncludedDataPack(context);
         registerIncludedResourcePack(context);
@@ -31,7 +29,7 @@ class ExamplePluginBootstrap implements PluginBootstrap {
                 event -> {
                     try {
                         event.registrar().discoverPack(Objects.requireNonNull(this.getClass().getResource("/data_pack")).toURI(), "provided");
-                    } catch (URISyntaxException | IOException e) {
+                    } catch (Exception e) {
                         throw new RuntimeException(e);
                     }
                 }

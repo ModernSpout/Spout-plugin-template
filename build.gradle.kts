@@ -14,11 +14,11 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.github.ModernSpout:Spout-Paper-server:${project.providers.gradleProperty("spoutVersion").get()}")
+    compileOnly("com.github.ModernSpout:Spout:${project.providers.gradleProperty("spoutVersion").get()}")
 }
 
 java {
-    toolchain.languageVersion = JavaLanguageVersion.of(21)
+    toolchain.languageVersion = JavaLanguageVersion.of(25)
 }
 
 val serverDir: File = projectDir.resolve("run")
@@ -33,7 +33,7 @@ tasks {
     register("downloadServer") {
         group = "spout"; notCompatibleWithConfigurationCache(""); doFirst {
         serverDir.mkdirs(); pluginDir.mkdirs(); URI(
-        "https://github.com/ModernSpout/Spout-Paper-server/releases/download/${
+        "https://github.com/ModernSpout/Spout/releases/download/${
             project.providers.gradleProperty("spoutVersion").get().let { "$it/spout-$it" }
         }.jar").toURL().openStream().use {
         Files.copy(it, serverDir.resolve("server.jar").toPath(), StandardCopyOption.REPLACE_EXISTING)
@@ -52,7 +52,7 @@ tasks {
                 pluginDir.resolve("${project.name}.jar").toPath()
             )
         }
-        classpath = files(serverDir.resolve("server.jar"))
+        classpath = files(serverDir.resolve("server.jar")); minHeapSize = "2G"; maxHeapSize = "2G"
         workingDir = serverDir; jvmArgs = listOf("-Dcom.mojang.eula.agree=true", "-Dspout.server.paper.enabled=true")
         args = listOf("--nogui"); standardInput = System.`in`
     }
