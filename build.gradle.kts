@@ -34,7 +34,8 @@ tasks {
         group = "spout"; notCompatibleWithConfigurationCache(""); doFirst {
         serverDir.mkdirs(); pluginDir.mkdirs(); URI(
         "https://github.com/ModernSpout/Spout/releases/download/${
-            project.providers.gradleProperty("spoutVersion").get().let { "$it/spout-$it" }
+            project.providers.gradleProperty("spoutVersion").get()
+                .let { "$it/spout-${project.providers.gradleProperty("apiVersion").get()}-R$it" }
         }.jar").toURL().openStream().use {
         Files.copy(it, serverDir.resolve("server.jar").toPath(), StandardCopyOption.REPLACE_EXISTING)
     }
