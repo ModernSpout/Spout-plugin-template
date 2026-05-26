@@ -24,7 +24,6 @@ To make this template into your own plugin, you should:
   (and update `paper-plugin.yml`)
 * Replace the plugin name in `src/main/resource/data_pack/pack.mcmeta`
 * Add your own content in `src/main/resources/data_pack` and `src/main/resources/resource_pack`\
-  (and update the namespaces in `paper-plugin.yml`)\
   (you can read how to add your own blocks and items [on the wiki](https://github.com/ModernSpout/Spout/wiki/*-Making-a-Spout-plugin))
 * Replace the text in this `README.md`\
   (you may keep the download/installation instructions below, or modify them as you like)

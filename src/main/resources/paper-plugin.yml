@@ -9,8 +9,6 @@ bootstrapper: com.example.spoutexampleplugin.ExamplePluginBootstrap
 # Choose the right API version here
 api-version: '26.1.2'
 load: POSTWORLD
-# Add any namespaces of blocks and items you add below, with a human-readable name
-namespaces: {}
 
 # Add yourself below
 authors: []
